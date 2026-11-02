@@ -18,9 +18,8 @@ const Card = (props) => {
         </h3>
         <h2>{props.post}</h2>
         <div className="tags">
-          {/* <h4 className="pad-border">{props.tag1}</h4> */}
-          <Badge level={props.level} />
-          {/* <h4 className="pad-border">{props.tag2}</h4> */}
+          <Badge level={props.level} tags={props.tag1} />
+          <Badge level={props.level} tags={props.tag2} />
         </div>
       </div>
       <div className="bottom">

@@ -1,15 +1,146 @@
- *{
+ * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
 
- html, body{
+ html,
+ body {
     height: 100%;
     width: 100%;
-    background-color: rgb(229, 223, 223);
-    
+    background-color: rgb(0, 0, 0);
+
  }
 
- .parent{
+ .parent {
+    margin: 5rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+ }
+
+ .card {
+    width: 400px;
+    height: 420px;
+    padding: 1.2rem;
+    background-color: rgb(246, 247, 246);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+
+
+ .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .top img {
+    max-block-size: 80px;
+    border: 0.2px solid rgb(194, 193, 193);
+    border-radius: 50%;
+ }
+
+ .top button {
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: rgb(221, 219, 219);
+    color: rgb(55, 54, 54);
+    cursor: pointer;
+ }
+
+ .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-top: 0.2px solid rgb(198, 197, 197);
+ }
+
+ .pad-border {
+    padding: 4px 1px;
+    border: none;
+    width: 100px;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0.6rem 0;
+    background-color: rgb(215, 210, 210);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+ }
+
+ .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    align-items: center;
+    margin-bottom: 5rem;
+    font-size: 0.8rem;
+    padding: 2px 0;
+ }
+
+ span {
+    color: grey;
+    font-size: 14px;
+
+ }
+
+ .center {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0;
+ }
+
+ .bottom button {
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+ }
+
+ .badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    line-height: 1.4;
+    white-space: nowrap;
+ }
+
+ .basic {
+    background-color: rgb(236, 238, 241);
+    color: rgb(71, 85, 105);
+    border: 1px solid rgb(203, 213, 225);
+ }
+
+ .pro {
+    background: linear-gradient(135deg, rgb(99, 102, 241), rgb(59, 130, 246));
+    color: white;
+    border: 1px solid rgb(79, 70, 229);
+    box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+ }
+
+ .elite {
+    background: linear-gradient(135deg, rgb(251, 191, 36), rgb(217, 119, 6));
+    color: rgb(69, 26, 3);
+    border: 1px solid rgb(180, 83, 9);
+    box-shadow: 0 2px 8px rgba(217, 119, 6, 0.35);
  }

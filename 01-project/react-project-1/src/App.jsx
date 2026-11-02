@@ -1,17 +1,27 @@
-import { BookmarkMinus } from "lucide-react";
-import hero from "./assets/hero.png";
+/* eslint-disable no-unused-vars */
+import React from "react";
+import Card from "./components/Card";
+import jobs from "./components/Job";
 
 const App = () => {
   return (
     <div className="parent">
-      <div className="card">
-        <div className="top">
-          <img src={hero} alt="hero" />
-          <button>
-            Save <BookmarkMinus />
-          </button>
-        </div>
-      </div>
+      {jobs.map(function (elem) {
+        return (
+          <Card
+            key={elem.key}
+            brandLogo={elem.brandLogo}
+            company={elem.company}
+            datePosted={elem.datePosted}
+            post={elem.post}
+            tag1={elem.tag1}
+            tag2={elem.tag2}
+            pay={elem.pay}
+            location={elem.location}
+            level={elem.level}
+          />
+        );
+      })}
     </div>
   );
 };
